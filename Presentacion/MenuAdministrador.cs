@@ -7,19 +7,59 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Objetos;
+using Negocio;
 
 namespace Presentacion
 {
     public partial class MenuAdministrador : Form
     {
+        Negocio.nClientes clientes;
+        Negocio.nReservas reservas;
+
+        int id_colaborador;
+
         public MenuAdministrador()
         {
             InitializeComponent();
+            clientes = new nClientes();
+            reservas = new nReservas();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cargarGanancia();
+            cargarCantidadClientes();
+            cargarReservashoy();
+        }
 
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
+        }
+
+        public int retornarIDColaborador()
+        {
+            return id_colaborador;
+        }
+
+        private void cargarCantidadClientes()
+        {
+            int cliente = clientes.cantidadClientes();
+            totalClientes.Text = Convert.ToString(cliente);
+        }
+
+        private void cargarGanancia()
+        {
+            int ganancia = reservas.ganancia();
+            this.lblGanancia.Text = "¢" + Convert.ToString(ganancia);
+
+        }
+
+        private void cargarReservashoy()
+        {
+            int hoy = reservas.entradashoy();
+            lblReservasHoy.Text = Convert.ToString(hoy);
         }
 
         private void pbClientes_Click(object sender, EventArgs e)
@@ -68,6 +108,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_BuscarReservacion buscar = new Frm_BuscarReservacion();
+            
             buscar.Show();
         }
 
@@ -110,6 +151,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Reservas reserva = new CRUD_Reservas();
+            reserva.capturarIDColaborador(id_colaborador);
             reserva.Show();
         }
 
@@ -117,6 +159,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Reservas reserva = new CRUD_Reservas();
+            reserva.capturarIDColaborador(id_colaborador);
             reserva.Show();
         }
 

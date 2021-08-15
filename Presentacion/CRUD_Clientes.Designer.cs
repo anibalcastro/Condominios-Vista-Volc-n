@@ -30,49 +30,51 @@ namespace Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUD_Clientes));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bandera = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.cbNacionalidad = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.dtg = new System.Windows.Forms.DataGridView();
+            this.pbAgregar = new System.Windows.Forms.PictureBox();
+            this.pbEditar = new System.Windows.Forms.PictureBox();
+            this.pbEliminar = new System.Windows.Forms.PictureBox();
+            this.pbLimpiar = new System.Windows.Forms.PictureBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.pbRegresar = new System.Windows.Forms.PictureBox();
+            this.cbLenguage = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bandera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEditar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // bandera
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(51, 480);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(237, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bandera.Image = ((System.Drawing.Image)(resources.GetObject("bandera.Image")));
+            this.bandera.Location = new System.Drawing.Point(51, 499);
+            this.bandera.Name = "bandera";
+            this.bandera.Size = new System.Drawing.Size(237, 105);
+            this.bandera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bandera.TabIndex = 0;
+            this.bandera.TabStop = false;
             // 
             // label10
             // 
@@ -117,41 +119,41 @@ namespace Presentacion
             this.label2.Text = "TÉLEFONO:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtCedula
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(51, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtCedula.BackColor = System.Drawing.Color.DimGray;
+            this.txtCedula.ForeColor = System.Drawing.Color.White;
+            this.txtCedula.Location = new System.Drawing.Point(51, 94);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(237, 20);
+            this.txtCedula.TabIndex = 14;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(51, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(237, 20);
-            this.textBox2.TabIndex = 15;
+            this.txtNombre.BackColor = System.Drawing.Color.DimGray;
+            this.txtNombre.ForeColor = System.Drawing.Color.White;
+            this.txtNombre.Location = new System.Drawing.Point(51, 160);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(237, 20);
+            this.txtNombre.TabIndex = 15;
             // 
-            // textBox3
+            // txtTelefono
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DimGray;
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(51, 219);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 20);
-            this.textBox3.TabIndex = 16;
+            this.txtTelefono.BackColor = System.Drawing.Color.DimGray;
+            this.txtTelefono.ForeColor = System.Drawing.Color.White;
+            this.txtTelefono.Location = new System.Drawing.Point(51, 219);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(237, 20);
+            this.txtTelefono.TabIndex = 16;
             // 
-            // textBox4
+            // txtCorreo
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DimGray;
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(51, 338);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(237, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtCorreo.BackColor = System.Drawing.Color.DimGray;
+            this.txtCorreo.ForeColor = System.Drawing.Color.White;
+            this.txtCorreo.Location = new System.Drawing.Point(51, 338);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(237, 20);
+            this.txtCorreo.TabIndex = 17;
             // 
             // label4
             // 
@@ -175,14 +177,14 @@ namespace Presentacion
             this.label5.Text = "FECHA DE NACIMEINTO:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // dtFechaNacimiento
             // 
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Black;
-            this.dateTimePicker1.Location = new System.Drawing.Point(51, 276);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(237, 20);
-            this.dateTimePicker1.TabIndex = 20;
+            this.dtFechaNacimiento.CalendarForeColor = System.Drawing.Color.White;
+            this.dtFechaNacimiento.CalendarMonthBackground = System.Drawing.Color.Black;
+            this.dtFechaNacimiento.Location = new System.Drawing.Point(51, 276);
+            this.dtFechaNacimiento.Name = "dtFechaNacimiento";
+            this.dtFechaNacimiento.Size = new System.Drawing.Size(237, 20);
+            this.dtFechaNacimiento.TabIndex = 20;
             // 
             // label6
             // 
@@ -195,180 +197,221 @@ namespace Presentacion
             this.label6.Text = "NACIONALIDAD:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cbNacionalidad
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.DimGray;
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbNacionalidad.BackColor = System.Drawing.Color.DimGray;
+            this.cbNacionalidad.ForeColor = System.Drawing.Color.White;
+            this.cbNacionalidad.FormattingEnabled = true;
+            this.cbNacionalidad.Items.AddRange(new object[] {
             "Costa Rica"});
-            this.comboBox1.Location = new System.Drawing.Point(51, 399);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(237, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cbNacionalidad.Location = new System.Drawing.Point(51, 399);
+            this.cbNacionalidad.Name = "cbNacionalidad";
+            this.cbNacionalidad.Size = new System.Drawing.Size(237, 21);
+            this.cbNacionalidad.TabIndex = 23;
+            this.cbNacionalidad.SelectedIndexChanged += new System.EventHandler(this.cbNacionalidad_SelectedIndexChanged);
             // 
-            // btnIniciarSesion
+            // btnAgregar
             // 
-            this.btnIniciarSesion.BackColor = System.Drawing.Color.Black;
-            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(89, 13);
-            this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(136, 32);
-            this.btnIniciarSesion.TabIndex = 24;
-            this.btnIniciarSesion.Text = "AGREGAR";
-            this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.Black;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(89, 13);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(136, 32);
+            this.btnAgregar.TabIndex = 24;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button4
+            // btnEditar
             // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(297, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 32);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "EDITAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.Color.Black;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(297, 13);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(136, 32);
+            this.btnEditar.TabIndex = 28;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(495, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 32);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "ELIMINAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.Black;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(495, 13);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(136, 32);
+            this.btnEliminar.TabIndex = 29;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button2
+            // btnRegresar
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(898, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 32);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "REGRESAR";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegresar.BackColor = System.Drawing.Color.Black;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(898, 13);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(136, 32);
+            this.btnRegresar.TabIndex = 31;
+            this.btnRegresar.Text = "REGRESAR";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // dtg
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(351, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(683, 513);
-            this.dataGridView1.TabIndex = 32;
+            this.dtg.AllowUserToAddRows = false;
+            this.dtg.AllowUserToDeleteRows = false;
+            this.dtg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg.Location = new System.Drawing.Point(351, 72);
+            this.dtg.Name = "dtg";
+            this.dtg.ReadOnly = true;
+            this.dtg.Size = new System.Drawing.Size(683, 532);
+            this.dtg.TabIndex = 32;
+            this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // pictureBox2
+            // pbAgregar
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(51, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
+            this.pbAgregar.Image = ((System.Drawing.Image)(resources.GetObject("pbAgregar.Image")));
+            this.pbAgregar.Location = new System.Drawing.Point(51, 13);
+            this.pbAgregar.Name = "pbAgregar";
+            this.pbAgregar.Size = new System.Drawing.Size(32, 32);
+            this.pbAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbAgregar.TabIndex = 33;
+            this.pbAgregar.TabStop = false;
+            this.pbAgregar.Click += new System.EventHandler(this.pbAgregar_Click);
             // 
-            // pictureBox3
+            // pbEditar
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(259, 14);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
+            this.pbEditar.Image = ((System.Drawing.Image)(resources.GetObject("pbEditar.Image")));
+            this.pbEditar.Location = new System.Drawing.Point(259, 14);
+            this.pbEditar.Name = "pbEditar";
+            this.pbEditar.Size = new System.Drawing.Size(32, 32);
+            this.pbEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbEditar.TabIndex = 34;
+            this.pbEditar.TabStop = false;
+            this.pbEditar.Click += new System.EventHandler(this.pbEditar_Click);
             // 
-            // pictureBox4
+            // pbEliminar
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(466, 13);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 35;
-            this.pictureBox4.TabStop = false;
+            this.pbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("pbEliminar.Image")));
+            this.pbEliminar.Location = new System.Drawing.Point(466, 13);
+            this.pbEliminar.Name = "pbEliminar";
+            this.pbEliminar.Size = new System.Drawing.Size(23, 32);
+            this.pbEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbEliminar.TabIndex = 35;
+            this.pbEliminar.TabStop = false;
+            this.pbEliminar.Click += new System.EventHandler(this.pbEliminar_Click);
             // 
-            // pictureBox5
+            // pbLimpiar
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(658, 14);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 37;
-            this.pictureBox5.TabStop = false;
+            this.pbLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("pbLimpiar.Image")));
+            this.pbLimpiar.Location = new System.Drawing.Point(658, 14);
+            this.pbLimpiar.Name = "pbLimpiar";
+            this.pbLimpiar.Size = new System.Drawing.Size(32, 32);
+            this.pbLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbLimpiar.TabIndex = 37;
+            this.pbLimpiar.TabStop = false;
+            this.pbLimpiar.Click += new System.EventHandler(this.pbLimpiar_Click);
             // 
-            // button3
+            // btnLimpiar
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(696, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 32);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "LIMPIAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLimpiar.BackColor = System.Drawing.Color.Black;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(696, 14);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(136, 32);
+            this.btnLimpiar.TabIndex = 36;
+            this.btnLimpiar.Text = "LIMPIAR";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // pictureBox6
+            // pbRegresar
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(860, 13);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 31);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 38;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pbRegresar.Image = ((System.Drawing.Image)(resources.GetObject("pbRegresar.Image")));
+            this.pbRegresar.Location = new System.Drawing.Point(860, 13);
+            this.pbRegresar.Name = "pbRegresar";
+            this.pbRegresar.Size = new System.Drawing.Size(32, 31);
+            this.pbRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRegresar.TabIndex = 38;
+            this.pbRegresar.TabStop = false;
+            this.pbRegresar.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // cbLenguage
+            // 
+            this.cbLenguage.BackColor = System.Drawing.Color.DimGray;
+            this.cbLenguage.ForeColor = System.Drawing.Color.White;
+            this.cbLenguage.FormattingEnabled = true;
+            this.cbLenguage.Items.AddRange(new object[] {
+            "Costa Rica"});
+            this.cbLenguage.Location = new System.Drawing.Point(51, 458);
+            this.cbLenguage.Name = "cbLenguage";
+            this.cbLenguage.Size = new System.Drawing.Size(237, 21);
+            this.cbLenguage.TabIndex = 40;
+            this.cbLenguage.SelectedIndexChanged += new System.EventHandler(this.cbLenguage_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(49, 436);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 19);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "LENGUAJE:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CRUD_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1060, 597);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.btnIniciarSesion);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1060, 616);
+            this.Controls.Add(this.cbLenguage);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pbRegresar);
+            this.Controls.Add(this.pbLimpiar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.pbEliminar);
+            this.Controls.Add(this.pbEditar);
+            this.Controls.Add(this.pbAgregar);
+            this.Controls.Add(this.dtg);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.cbNacionalidad);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtFechaNacimiento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bandera);
             this.Name = "CRUD_Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CRUD_Clientes";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Text = "CLIENTES";
+            this.Load += new System.EventHandler(this.CRUD_Clientes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bandera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAgregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEditar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,30 +419,32 @@ namespace Presentacion
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox bandera;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.ComboBox cbNacionalidad;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.DataGridView dtg;
+        private System.Windows.Forms.PictureBox pbAgregar;
+        private System.Windows.Forms.PictureBox pbEditar;
+        private System.Windows.Forms.PictureBox pbEliminar;
+        private System.Windows.Forms.PictureBox pbLimpiar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.PictureBox pbRegresar;
+        private System.Windows.Forms.ComboBox cbLenguage;
+        private System.Windows.Forms.Label label7;
     }
 }

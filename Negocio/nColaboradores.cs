@@ -11,6 +11,7 @@ namespace Negocio
     public class nColaboradores
     {
         List<ObjColaboradores> lista = new Datos.BDColaboradores().leerColaborador();
+        int id_colaborador;
 
         public string validarExistencia(int cedula, string contrasenna)
         {
@@ -26,11 +27,13 @@ namespace Negocio
                         if (lista[i].rol.Equals("Administrador"))
                         {
                             rol = "Administrador";
+                            id_colaborador = lista[i].id_colaborador;
                             break;
                         }
                         else if (lista[i].rol.Equals("Recepcionista"))
                         {
                             rol = "Recepcionista";
+                            id_colaborador = lista[i].id_colaborador;
                             break;
                         }
                         else 
@@ -47,6 +50,11 @@ namespace Negocio
             }
 
             return rol;
+        }
+
+        public int retornarIDColaborador()
+        {
+            return id_colaborador;
         }
 
         public void AgregarColaboradores(ObjColaboradores objeto)

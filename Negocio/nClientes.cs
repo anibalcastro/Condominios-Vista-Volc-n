@@ -30,5 +30,10 @@ namespace Negocio
             return new Datos.BDClientes().leerCliente();
         }
 
+        public int cantidadClientes()
+        {
+            return new Datos.BDClientes().cantidadClientes();
+        }
+
     }
 }

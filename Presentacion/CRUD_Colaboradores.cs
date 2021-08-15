@@ -67,9 +67,10 @@ namespace Presentacion
 
         private void AgregarColaborador()
         {
+            capturarDatos();
             if (objetos != null)
             {
-                capturarDatos();
+                
                 colaborador.AgregarColaboradores(objetos);
                 this.llenarTabla();
                 MessageBox.Show("Colaborador Agregado", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,9 +142,10 @@ namespace Presentacion
 
         private void editar()
         {
+            this.capturarDatos();
             if (objetos!= null)
             {
-                this.capturarDatos();
+                
                 colaborador.EditarColaboradores(objetos);
                 MessageBox.Show("Colaborador Editado", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.llenarTabla();
@@ -155,9 +157,10 @@ namespace Presentacion
 
         private void eliminar()
         {
+            this.capturarDatos();
             if (objetos != null)
             {
-                this.capturarDatos();
+                
                 colaborador.EliminarColaboradores(objetos);
                 MessageBox.Show("Colaborador Eliminado", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.llenarTabla();

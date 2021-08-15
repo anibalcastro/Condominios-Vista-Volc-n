@@ -32,9 +32,11 @@ namespace Presentacion
 
             if (rol.Equals("Administrador"))
             {
+                int id = colaborador.retornarIDColaborador();
                 this.Hide();
                 MenuAdministrador admin = new MenuAdministrador();
                 admin.Show();
+                admin.obtenerIDColaborador(id);
 
                 MessageBox.Show("Bienvenido", "BIENVENIDA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

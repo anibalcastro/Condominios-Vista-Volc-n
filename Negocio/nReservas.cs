@@ -25,5 +25,30 @@ namespace Negocio
         {
             new Datos.BDReservas().eliminarReservar(obj);
         }
+
+        public int ganancia()
+        {
+            return new Datos.BDReservas().Ganancia();
+        }
+
+        public int entradashoy()
+        {
+            return new Datos.BDReservas().ReservasParaHoy();
+        }
+
+        public List<ObjReporteReserva> buscarPorFecha(DateTime desde, DateTime hasta)
+        {
+            return new Datos.BDReservas().reporteXfechas(desde, hasta);
+        }
+
+        public List<ObjReporteReserva> buscarPorID(int id)
+        {
+            return new Datos.BDReservas().reporteXID(id);
+        }
+
+        public List<ObjReporteReserva> leerReserva ()
+        {
+            return new Datos.BDReservas().leerReservas();
+        }
     }
 }
