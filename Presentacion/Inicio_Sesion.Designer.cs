@@ -56,9 +56,9 @@ namespace Presentacion
             this.label1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(645, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
+            this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "USUARIO:";
+            this.label1.Text = "CÉDULA:";
             // 
             // txtCedula
             // 
