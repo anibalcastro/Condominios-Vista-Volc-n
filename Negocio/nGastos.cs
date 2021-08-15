@@ -19,5 +19,10 @@ namespace Negocio
         {
             return new Datos.BDGastos().leerGastos();
         }
+
+        public List<ObjGastos> leerGastosPorFecha(DateTime desde, DateTime hasta)
+        {
+            return new Datos.BDGastos().leerGastos();
+        }
     }
 }

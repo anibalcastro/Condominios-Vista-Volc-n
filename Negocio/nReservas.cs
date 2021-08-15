@@ -50,5 +50,10 @@ namespace Negocio
         {
             return new Datos.BDReservas().leerReservas();
         }
+
+        public List<int> reservasPlataforma()
+        {
+            return new Datos.BDReservas().reservasPlataforma();
+        }
     }
 }

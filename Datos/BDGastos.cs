@@ -36,7 +36,8 @@ namespace Datos
             conexion = Conexion.ConexionBD();
             conexion.Open();
 
-            cmd = new NpgsqlCommand("", conexion);
+            cmd = new NpgsqlCommand("SELECT id, tipo_gasto, num_factura, monto, fecha FROM \"Administracion\".\"Gastos\""
+                , conexion);
 
             NpgsqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -45,7 +46,41 @@ namespace Datos
                 {
                     ObjGastos objeto = new ObjGastos()
                     {
+                        id_gasto = dr.GetInt32(0),
+                        tipo_gasto = dr.GetString(1),
+                        num_factura = dr.GetInt32(2),
+                        monto = dr.GetInt32(3),
+                        fecha = dr.GetDateTime(4)
+                    };
+                    lista.Add(objeto);
+                }
+            }
+            conexion.Close();
+            return lista;
+        }
 
+        public List<ObjGastos> leerGastosPorFecha(DateTime desde, DateTime hasta)
+        {
+            List<ObjGastos> lista = new List<ObjGastos>();
+            conexion = Conexion.ConexionBD();
+            conexion.Open();
+
+            cmd = new NpgsqlCommand("SELECT id, tipo_gasto, num_factura, monto, fecha FROM \"Administracion\".\"Gastos\" " +
+                " WHERE fecha BETWEEN '"+ desde +"' AND '"+ hasta +"'; "
+                , conexion);
+
+            NpgsqlDataReader dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    ObjGastos objeto = new ObjGastos()
+                    {
+                        id_gasto = dr.GetInt32(0),
+                        tipo_gasto = dr.GetString(1),
+                        num_factura = dr.GetInt32(2),
+                        monto = dr.GetInt32(3),
+                        fecha = dr.GetDateTime(4)
                     };
                     lista.Add(objeto);
                 }
