@@ -44,7 +44,7 @@ namespace Datos
                 "cant_personas =" + objeto.cant_personas + ", " +
                 "id_plataforma =" + objeto.id_plataforma + ", " +
                 "precio =" + objeto.precio +
-                "WHERE id =?; ", conexion);
+                "WHERE id_reserva="+ objeto.id_reservas +"; ", conexion);
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
@@ -54,7 +54,7 @@ namespace Datos
             conexion = Conexion.ConexionBD();
             conexion.Open();
 
-            cmd = new NpgsqlCommand("DELETE FROM \"Reservas\".\"Reservaciones\" WHERE id =" + objeto.id_reservas + " ; ", conexion);
+            cmd = new NpgsqlCommand("DELETE FROM \"Reservas\".\"Reservaciones\" WHERE id_reserva =" + objeto.id_reservas + " ; ", conexion);
 
             cmd.ExecuteNonQuery();
             conexion.Close();

@@ -251,6 +251,7 @@ namespace Presentacion
             this.entrada.Name = "entrada";
             this.entrada.Size = new System.Drawing.Size(222, 20);
             this.entrada.TabIndex = 94;
+            this.entrada.ValueChanged += new System.EventHandler(this.entrada_ValueChanged);
             // 
             // salida
             // 
@@ -427,9 +428,10 @@ namespace Presentacion
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CRUD_Reservas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CRUD_Reservas";
+            this.Text = "Reservar";
             this.Load += new System.EventHandler(this.CRUD_Reservas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).EndInit();

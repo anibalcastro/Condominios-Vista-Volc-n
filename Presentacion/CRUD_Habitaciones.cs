@@ -17,7 +17,8 @@ namespace Presentacion
         ObjHabitacion objeto;
         Negocio.nHabitacion habitacion;
         int id_habitacion = 0;
-        
+        int id_colaborador;
+
         public CRUD_Habitaciones()
         {
             InitializeComponent();
@@ -57,12 +58,18 @@ namespace Presentacion
             }
             
         }
-        
+
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuAdministrador administrador = new MenuAdministrador();
-            administrador.Show();
+            MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
+            admin.Show();
         }
         
         private void limpiar()
@@ -76,8 +83,9 @@ namespace Presentacion
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuAdministrador administrador = new MenuAdministrador();
-            administrador.Show();
+            MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
+            admin.Show();
         }
         
         private void agregarHabitacion()

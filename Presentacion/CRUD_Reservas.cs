@@ -82,7 +82,7 @@ namespace Presentacion
                 limpiar();
                 llenarTabla();
                 objeto = null;
-                MessageBox.Show("Reserva Agregada", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Reserva Editada", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -139,7 +139,7 @@ namespace Presentacion
                 limpiar();
                 llenarTabla();
                 objeto = null;
-                MessageBox.Show("Reserva Agregada", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Reserva Eliminada", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -227,6 +227,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador administrador = new MenuAdministrador();
+            administrador.obtenerIDColaborador(id_colaborador);
             administrador.Show();
         }
 
@@ -234,6 +235,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador administrador = new MenuAdministrador();
+            administrador.obtenerIDColaborador(id_colaborador);
             administrador.Show();
         }
 
@@ -331,6 +333,13 @@ namespace Presentacion
         private void pbLimpiar_Click(object sender, EventArgs e)
         {
             this.limpiar();
+        }
+
+        private void entrada_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime valor = entrada.Value;
+            
+            salida.Value = valor.AddDays(1);
         }
     }
 }

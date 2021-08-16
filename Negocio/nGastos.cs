@@ -22,7 +22,7 @@ namespace Negocio
 
         public List<ObjGastos> leerGastosPorFecha(DateTime desde, DateTime hasta)
         {
-            return new Datos.BDGastos().leerGastos();
+            return new Datos.BDGastos().leerGastosPorFecha(desde,hasta);
         }
     }
 }

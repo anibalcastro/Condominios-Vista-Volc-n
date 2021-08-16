@@ -17,6 +17,8 @@ namespace Presentacion
         Negocio.nColaboradores colaborador;
         Objetos.ObjColaboradores objetos;
         int id = 0;
+        int id_colaborador;
+
         public CRUD_Colaboradores()
         {
             InitializeComponent();
@@ -63,6 +65,11 @@ namespace Presentacion
                 MessageBox.Show("Faltan espacios por llenar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
+        }
+
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
         }
 
         private void AgregarColaborador()
@@ -136,6 +143,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
             this.limpiarCampos();
         }

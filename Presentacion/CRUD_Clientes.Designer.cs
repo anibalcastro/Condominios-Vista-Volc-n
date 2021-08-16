@@ -266,7 +266,7 @@ namespace Presentacion
             // 
             this.dtg.AllowUserToAddRows = false;
             this.dtg.AllowUserToDeleteRows = false;
-            this.dtg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dtg.BackgroundColor = System.Drawing.Color.DimGray;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Location = new System.Drawing.Point(351, 72);
@@ -401,9 +401,10 @@ namespace Presentacion
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bandera);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CRUD_Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CLIENTES";
+            this.Text = "Clientes";
             this.Load += new System.EventHandler(this.CRUD_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bandera)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg)).EndInit();

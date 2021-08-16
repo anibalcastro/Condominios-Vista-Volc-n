@@ -376,7 +376,11 @@ namespace Presentacion
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Items.AddRange(new object[] {
             "Administrador",
-            "Recepcionista"});
+            "Recepcionista",
+            "Publicista",
+            "Mantenimiento",
+            "Ama de llaves",
+            "Botones"});
             this.cbRol.Location = new System.Drawing.Point(43, 519);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(237, 21);
@@ -416,9 +420,10 @@ namespace Presentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CRUD_Colaboradores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CRUD_Colaboradores";
+            this.Text = "Colaboradores";
             this.Load += new System.EventHandler(this.CRUD_Colaboradores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).EndInit();

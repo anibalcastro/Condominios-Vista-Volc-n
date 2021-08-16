@@ -325,9 +325,10 @@ namespace Presentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CRUD_Habitaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CRUD_Habitaciones";
+            this.Text = "Habitaciones";
             this.Load += new System.EventHandler(this.CRUD_Habitaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bpRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLimpiar)).EndInit();

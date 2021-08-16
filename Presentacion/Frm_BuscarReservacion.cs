@@ -16,11 +16,17 @@ namespace Presentacion
     {
         nReservas reservas;
         int id;
+        int id_colaborador;
 
         public Frm_BuscarReservacion()
         {
             InitializeComponent();
             reservas = new nReservas();
+        }
+
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
         }
 
         private void llenarTablaPorFechas(DateTime Desde, DateTime Hasta)
@@ -113,6 +119,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 
@@ -160,6 +167,14 @@ namespace Presentacion
             DateTime Hasta = dtpHasta.Value;
 
             this.llenarTablaPorFechas(Desde, Hasta);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
+            admin.Show();
         }
     }
 }

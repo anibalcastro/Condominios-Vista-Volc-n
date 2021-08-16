@@ -20,6 +20,8 @@ namespace Presentacion
         Negocio.nGastos gastos;
         Negocio.nReservas reservas;
 
+        int id_colaborador;
+
         public Frm_Reportes()
         {
             InitializeComponent();
@@ -30,10 +32,16 @@ namespace Presentacion
             reservas = new nReservas();
         }
 
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 
@@ -42,6 +50,7 @@ namespace Presentacion
 
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 
@@ -269,6 +278,12 @@ namespace Presentacion
             DateTime hasta = dtpHasta.Value;
 
             this.cargarGastoFecha(desde, hasta);  
+        }
+
+        private void dtpDesde_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime valor = dtpDesde.Value;
+            dtpHasta.Value = valor.AddDays(1);
         }
     }
 }

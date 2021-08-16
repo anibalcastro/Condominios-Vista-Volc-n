@@ -16,11 +16,17 @@ namespace Presentacion
     {
         Objetos.ObjGastos objeto;
         Negocio.nGastos gastos;
+        int id_colaborador;
 
         public Frm_Gastos()
         {
             InitializeComponent();
             gastos = new nGastos();
+        }
+
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
         }
 
         private void CapturarDatos()
@@ -68,6 +74,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 
@@ -75,6 +82,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 

@@ -19,6 +19,7 @@ namespace Presentacion
         Negocio.nClientes cliente;
    
         int id_cliente;
+        int id_colaborador;
         string imagen;
         string capital;
         string iso;
@@ -41,6 +42,15 @@ namespace Presentacion
         {
             InitializeComponent();
             cliente = new nClientes();
+        }
+        public void obtenerIDColaborador(int colaborador)
+        {
+            id_colaborador = colaborador;
+        }
+
+        public int retornarIDColaborador()
+        {
+            return id_colaborador;
         }
 
         private void capturarDatos()
@@ -297,6 +307,7 @@ namespace Presentacion
         {
             this.Hide();
             MenuAdministrador admin = new MenuAdministrador();
+            admin.obtenerIDColaborador(id_colaborador);
             admin.Show();
         }
 

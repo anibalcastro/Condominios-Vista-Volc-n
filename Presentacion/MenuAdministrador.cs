@@ -38,11 +38,6 @@ namespace Presentacion
             id_colaborador = colaborador;
         }
 
-        public int retornarIDColaborador()
-        {
-            return id_colaborador;
-        }
-
         private void cargarCantidadClientes()
         {
             int cliente = clientes.cantidadClientes();
@@ -66,6 +61,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Clientes clientes = new CRUD_Clientes();
+            clientes.obtenerIDColaborador(id_colaborador);
             clientes.Show();
         }
 
@@ -73,6 +69,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Clientes clientes = new CRUD_Clientes();
+            clientes.obtenerIDColaborador(id_colaborador);
             clientes.Show();
         }
 
@@ -80,6 +77,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Colaboradores colaboradores = new CRUD_Colaboradores();
+            colaboradores.obtenerIDColaborador(id_colaborador);
             colaboradores.Show();
         }
 
@@ -87,6 +85,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Colaboradores colaboradores = new CRUD_Colaboradores();
+            colaboradores.obtenerIDColaborador(id_colaborador);
             colaboradores.Show();
         }
 
@@ -94,6 +93,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_Gastos gastos = new Frm_Gastos();
+            gastos.obtenerIDColaborador(id_colaborador);
             gastos.Show();
         }
 
@@ -101,6 +101,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_Gastos gastos = new Frm_Gastos();
+            gastos.obtenerIDColaborador(id_colaborador);
             gastos.Show();
         }
 
@@ -108,7 +109,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_BuscarReservacion buscar = new Frm_BuscarReservacion();
-            
+            buscar.obtenerIDColaborador(id_colaborador);
             buscar.Show();
         }
 
@@ -116,6 +117,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_BuscarReservacion buscar = new Frm_BuscarReservacion();
+            buscar.obtenerIDColaborador(id_colaborador);
             buscar.Show();
         }
 
@@ -137,6 +139,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_Reportes reportes = new Frm_Reportes();
+            reportes.obtenerIDColaborador(id_colaborador);
             reportes.Show();
         }
 
@@ -144,6 +147,7 @@ namespace Presentacion
         {
             this.Hide();
             Frm_Reportes reportes = new Frm_Reportes();
+            reportes.obtenerIDColaborador(id_colaborador);
             reportes.Show();
         }
 
@@ -167,6 +171,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Habitaciones habitaciones = new CRUD_Habitaciones();
+            habitaciones.obtenerIDColaborador(id_colaborador);
             habitaciones.Show();
         }
 
@@ -174,6 +179,7 @@ namespace Presentacion
         {
             this.Hide();
             CRUD_Habitaciones habitaciones = new CRUD_Habitaciones();
+            habitaciones.obtenerIDColaborador(id_colaborador);
             habitaciones.Show();
         }
     }
