@@ -32,6 +32,8 @@ namespace Presentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdministrador));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblIngreso = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHabitaciones = new System.Windows.Forms.Label();
             this.pbHabitaciones = new System.Windows.Forms.PictureBox();
             this.lblBuscarReserva = new System.Windows.Forms.Label();
@@ -59,6 +61,7 @@ namespace Presentacion
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHabitaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).BeginInit();
@@ -85,6 +88,8 @@ namespace Presentacion
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.panel1.Controls.Add(this.lblIngreso);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblHabitaciones);
             this.panel1.Controls.Add(this.pbHabitaciones);
             this.panel1.Controls.Add(this.lblBuscarReserva);
@@ -103,8 +108,31 @@ namespace Presentacion
             this.panel1.Controls.Add(this.pbReservas);
             this.panel1.Location = new System.Drawing.Point(0, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 459);
+            this.panel1.Size = new System.Drawing.Size(244, 519);
             this.panel1.TabIndex = 2;
+            // 
+            // lblIngreso
+            // 
+            this.lblIngreso.AutoSize = true;
+            this.lblIngreso.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngreso.Location = new System.Drawing.Point(67, 356);
+            this.lblIngreso.Name = "lblIngreso";
+            this.lblIngreso.Size = new System.Drawing.Size(72, 19);
+            this.lblIngreso.TabIndex = 19;
+            this.lblIngreso.Text = "INGRESO";
+            this.lblIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblIngreso.Click += new System.EventHandler(this.lblIngreso_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 343);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblHabitaciones
             // 
@@ -179,7 +207,7 @@ namespace Presentacion
             // 
             this.lblSalir.AutoSize = true;
             this.lblSalir.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalir.Location = new System.Drawing.Point(67, 408);
+            this.lblSalir.Location = new System.Drawing.Point(67, 454);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(48, 19);
             this.lblSalir.TabIndex = 9;
@@ -190,7 +218,7 @@ namespace Presentacion
             // pbSalir
             // 
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(29, 395);
+            this.pbSalir.Location = new System.Drawing.Point(29, 441);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(32, 32);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -225,7 +253,7 @@ namespace Presentacion
             // 
             this.lblReportes.AutoSize = true;
             this.lblReportes.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReportes.Location = new System.Drawing.Point(67, 357);
+            this.lblReportes.Location = new System.Drawing.Point(67, 403);
             this.lblReportes.Name = "lblReportes";
             this.lblReportes.Size = new System.Drawing.Size(85, 19);
             this.lblReportes.TabIndex = 5;
@@ -236,7 +264,7 @@ namespace Presentacion
             // pbReportes
             // 
             this.pbReportes.Image = ((System.Drawing.Image)(resources.GetObject("pbReportes.Image")));
-            this.pbReportes.Location = new System.Drawing.Point(29, 344);
+            this.pbReportes.Location = new System.Drawing.Point(29, 390);
             this.pbReportes.Name = "pbReportes";
             this.pbReportes.Size = new System.Drawing.Size(32, 32);
             this.pbReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -388,7 +416,7 @@ namespace Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(824, 452);
+            this.ClientSize = new System.Drawing.Size(824, 513);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblGanancia);
             this.Controls.Add(this.pictureBox8);
@@ -408,6 +436,7 @@ namespace Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHabitaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClientes)).EndInit();
@@ -453,6 +482,8 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox pbBuscar;
         private System.Windows.Forms.Label lblHabitaciones;
         private System.Windows.Forms.PictureBox pbHabitaciones;
+        private System.Windows.Forms.Label lblIngreso;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

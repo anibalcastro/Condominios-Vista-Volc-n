@@ -48,6 +48,7 @@
     <Compile Include="BDColaboradores.cs" />
     <Compile Include="BDGastos.cs" />
     <Compile Include="BDHabitaciones.cs" />
+    <Compile Include="BDIngreso.cs" />
     <Compile Include="BDReservas.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

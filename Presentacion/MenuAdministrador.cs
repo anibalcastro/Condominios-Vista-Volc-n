@@ -182,5 +182,21 @@ namespace Presentacion
             habitaciones.obtenerIDColaborador(id_colaborador);
             habitaciones.Show();
         }
+
+        private void lblIngreso_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmIngreso ingreso = new FrmIngreso();
+            ingreso.obtenerIDColaborador(id_colaborador);
+            ingreso.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmIngreso ingreso = new FrmIngreso();
+            ingreso.obtenerIDColaborador(id_colaborador);
+            ingreso.Show();
+        }
     }
 }

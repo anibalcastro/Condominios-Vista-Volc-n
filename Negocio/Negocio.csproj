@@ -45,6 +45,7 @@
     <Compile Include="nColaboradores.cs" />
     <Compile Include="nGastos.cs" />
     <Compile Include="nHabitacion.cs" />
+    <Compile Include="nIngreso.cs" />
     <Compile Include="nReservas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

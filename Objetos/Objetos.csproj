@@ -45,6 +45,7 @@
     <Compile Include="ObjColaboradores.cs" />
     <Compile Include="ObjGastos.cs" />
     <Compile Include="ObjHabitacion.cs" />
+    <Compile Include="ObjIngresos.cs" />
     <Compile Include="ObjReporteReserva.cs" />
     <Compile Include="ObjReservas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
